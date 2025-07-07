@@ -60,7 +60,6 @@
   </footer>
   <script src="../script.js"></script>
   <script>
-    // Dropdown logic
     document.querySelectorAll('.dropdown').forEach(function(drop) {
       const btn = drop.querySelector('button');
       const content = drop.querySelector('.dropdown-content');
@@ -72,7 +71,6 @@
         if (!drop.contains(e.target)) content.style.display = 'none';
       });
     });
-    // Topic filtering
     const filter = document.getElementById('topic-filter');
     const cards = document.querySelectorAll('.grid .card');
     filter.addEventListener('change', function() {
