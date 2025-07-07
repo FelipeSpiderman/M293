@@ -1,88 +1,161 @@
-<!-- File: topics/hobbies/article1.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Beginner's Guide to Photography - Felípe Blog</title>
-  <link rel="stylesheet" href="../../style.css">
-</head>
-<body>
-
-  <header>
-    <div class="main-container header-content">
-      <h1><a href="../../index.html" style="color: inherit;">Felípe Blog</a></h1>
-      <div class="hamburger-menu">
-        <button id="hamburger-btn" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
-        <nav id="dropdown-menu">
-          <a href="../../index.html">Home</a>
-          <a href="../index.html">Topics</a>
-          <a href="../../contact/index.html">Contact</a>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beginner's Guide to Photography - Felípe Blog</title>
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main-container header-content">
+        <h1>
+          <a href="../../index.html" style="color: inherit">Felípe Blog</a>
+        </h1>
+        <div class="hamburger-menu">
+          <button id="hamburger-btn" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
+          <nav id="dropdown-menu">
+            <a href="../../index.html">Home</a>
+            <a href="../index.html">Topics</a>
+            <a href="../../contact/index.html">Contact</a>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="main-container">
-    <article class="article-content">
-      <span class="article-tag">Hobbies to Try</span>
-      <h2>Beginner's Guide to Photography</h2>
-      <div class="author">
-        <img src="../../assets/author7.jpg" alt="Author Casey Morgan">
-        <div class="author-info">By Casey Morgan</div>
-      </div>
-      <img src="../../assets/hobby1.jpg" alt="A person holding a camera taking a picture of a sunset" style="width:100%;border-radius:8px;margin-bottom:1.5em;">
-      
-      <p>Photography is more than just pointing a camera and clicking a button; it's the art of capturing light, emotion, and moments in time. For beginners, the world of photography can seem intimidating with its talk of ISO, aperture, and shutter speed. But don't worry, the fundamentals are easier to grasp than you think.</p>
-      
-      <h3>1. Understand the Exposure Triangle</h3>
-      <p>The three most important settings on any camera are Aperture, Shutter Speed, and ISO. They work together to create a properly exposed photo.</p>
-      <ul>
-        <li><strong>Aperture (f-stop):</strong> Controls the opening of the lens, affecting how much light comes in and the depth of field (how much of the background is blurry). A low f-stop (e.g., f/1.8) means more light and a blurrier background.</li>
-        <li><strong>Shutter Speed:</strong> Controls how long the camera's sensor is exposed to light. A fast shutter speed (e.g., 1/1000s) freezes motion, while a slow speed (e.g., 1/30s) can create motion blur.</li>
-        <li><strong>ISO:</strong> This is your camera's sensitivity to light. A low ISO (e.g., 100) is best for bright conditions, while a high ISO (e.g., 3200) helps in dark situations, but can add digital "noise" or grain to the photo.</li>
-      </ul>
-      <p>Play with these settings in "Manual" or "Aperture Priority" mode to see how they affect your images. It's the best way to learn!</p>
-
-      <h3>2. Master Composition</h3>
-      <p>A great subject can be lost in a poorly composed photo. Start with the <strong>Rule of Thirds</strong>. Imagine your frame is divided into a 3x3 grid. Place your main subject along these lines or at their intersections for a more balanced and visually interesting photo. Also, look for leading lines (like roads or fences) to guide the viewer's eye through your image.</p>
-
-      <h3>3. Light is Everything</h3>
-      <p>The best photographers are masters of light. Avoid harsh midday sun, which creates strong, unflattering shadows. The best time for outdoor photography is during the "golden hours" – the first hour after sunrise and the last hour before sunset. The light is soft, warm, and creates beautiful, long shadows that add depth to your photos.</p>
-      
-      <p>Above all, the best way to improve is to practice. Take your camera everywhere. Shoot what you love, experiment without fear, and you'll soon be capturing the beautiful moments you see all around you.</p>
-
-      <!-- LikeBtn.com Widget -->
-      <div class="like-section">
-        <h3>Did you like this article?</h3>
-        <div class="likebtn-wrapper" data-identifier="hobbies-article1"></div>
-        <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a,m)})(document,"script","https://w.likebtn.com/js/w/widget.js");</script>
-      </div>
-      
-      <div class="comment-section">
-        <h3>Leave a Comment</h3>
-        <form id="comment-form">
-          <div class="form-group">
-            <label for="comment-author">Name</label>
-            <input type="text" id="comment-author" name="author" required placeholder="Your name">
+    <main class="main-container">
+      <article class="article-content">
+        <span class="article-tag">Hobbies to Try</span>
+        <h2>Beginner's Guide to Photography</h2>
+        <div class="author">
+          <div class="author">
+            <img
+              src="https://ghba.org/wp-content/uploads/people/staff/casey-morgan-1.jpg"
+              alt="Author"
+            />
+            <div class="author-info">By Casey Morgan</div>
           </div>
-          <div class="form-group">
-            <label for="comment-text">Comment</label>
-            <textarea id="comment-text" name="comment" rows="4" required placeholder="Write your comment..."></textarea>
-          </div>
-          <input type="submit" value="Post Comment" class="button">
-        </form>
-        <div class="comment-list" id="comment-list"></div>
-      </div>
-    </article>
-  </main>
+        </div>
+        <img
+          src="https://wallup.net/wp-content/uploads/2016/03/10/319576-photography-landscape-nature-water-grass-trees-plants-sunrise-lake.jpg"
+          alt="A person holding a camera taking a picture of a sunset"
+          style="width: 100%; border-radius: 8px; margin-bottom: 1.5em"
+        />
 
-  <footer>
-    Felípe Blog © 2025
-  </footer>
+        <p>
+          Photography is more than just pointing a camera and clicking a button;
+          it's the art of capturing light, emotion, and moments in time. For
+          beginners, the world of photography can seem intimidating with its
+          talk of ISO, aperture, and shutter speed. But don't worry, the
+          fundamentals are easier to grasp than you think.
+        </p>
 
-  <script src="../../script.js"></script>
-</body>
+        <h3>1. Understand the Exposure Triangle</h3>
+        <p>
+          The three most important settings on any camera are Aperture, Shutter
+          Speed, and ISO. They work together to create a properly exposed photo.
+        </p>
+        <ul>
+          <li>
+            <strong>Aperture (f-stop):</strong> Controls the opening of the
+            lens, affecting how much light comes in and the depth of field (how
+            much of the background is blurry). A low f-stop (e.g., f/1.8) means
+            more light and a blurrier background.
+          </li>
+          <li>
+            <strong>Shutter Speed:</strong> Controls how long the camera's
+            sensor is exposed to light. A fast shutter speed (e.g., 1/1000s)
+            freezes motion, while a slow speed (e.g., 1/30s) can create motion
+            blur.
+          </li>
+          <li>
+            <strong>ISO:</strong> This is your camera's sensitivity to light. A
+            low ISO (e.g., 100) is best for bright conditions, while a high ISO
+            (e.g., 3200) helps in dark situations, but can add digital "noise"
+            or grain to the photo.
+          </li>
+        </ul>
+        <p>
+          Play with these settings in "Manual" or "Aperture Priority" mode to
+          see how they affect your images. It's the best way to learn!
+        </p>
+
+        <h3>2. Master Composition</h3>
+        <p>
+          A great subject can be lost in a poorly composed photo. Start with the
+          <strong>Rule of Thirds</strong>. Imagine your frame is divided into a
+          3x3 grid. Place your main subject along these lines or at their
+          intersections for a more balanced and visually interesting photo.
+          Also, look for leading lines (like roads or fences) to guide the
+          viewer's eye through your image.
+        </p>
+
+        <h3>3. Light is Everything</h3>
+        <p>
+          The best photographers are masters of light. Avoid harsh midday sun,
+          which creates strong, unflattering shadows. The best time for outdoor
+          photography is during the "golden hours" – the first hour after
+          sunrise and the last hour before sunset. The light is soft, warm, and
+          creates beautiful, long shadows that add depth to your photos.
+        </p>
+
+        <p>
+          Above all, the best way to improve is to practice. Take your camera
+          everywhere. Shoot what you love, experiment without fear, and you'll
+          soon be capturing the beautiful moments you see all around you.
+        </p>
+
+        <!-- LikeBtn.com Widget -->
+        <div class="like-section">
+          <h3>Did you like this article?</h3>
+          <div class="likebtn-wrapper" data-identifier="hobbies-article1"></div>
+          <script>
+            (function (d, e, s) {
+              if (d.getElementById("likebtn_wjs")) return;
+              a = d.createElement(e);
+              m = d.getElementsByTagName(e)[0];
+              a.async = 1;
+              a.id = "likebtn_wjs";
+              a.src = s;
+              m.parentNode.insertBefore(a, m);
+            })(document, "script", "https://w.likebtn.com/js/w/widget.js");
+          </script>
+        </div>
+
+        <div class="comment-section">
+          <h3>Leave a Comment</h3>
+          <form id="comment-form">
+            <div class="form-group">
+              <label for="comment-author">Name</label>
+              <input
+                type="text"
+                id="comment-author"
+                name="author"
+                required
+                placeholder="Your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="comment-text">Comment</label>
+              <textarea
+                id="comment-text"
+                name="comment"
+                rows="4"
+                required
+                placeholder="Write your comment..."
+              ></textarea>
+            </div>
+            <input type="submit" value="Post Comment" class="button" />
+          </form>
+          <div class="comment-list" id="comment-list"></div>
+        </div>
+      </article>
+    </main>
+
+    <footer>Felípe Blog © 2025</footer>
+
+    <script src="../../script.js"></script>
+  </body>
 </html>
