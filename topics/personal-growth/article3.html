@@ -7,94 +7,25 @@
     <link rel="stylesheet" href="../../style.css" />
   </head>
   <body>
-    <header>
-      <div
-        class="main-container"
-        style="
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        "
-      >
-        <h1>Felípe Blog</h1>
-        <div class="hamburger-menu" style="position: relative">
-          <button
-            id="hamburger-btn"
-            aria-label="Open menu"
-            style="
-              background: none;
-              border: none;
-              cursor: pointer;
-              padding: 0.5em;
-              display: flex;
-              flex-direction: column;
-              gap: 5px;
-              justify-content: center;
-              align-items: center;
-            "
-          >
-            <span
-              style="
-                display: block;
-                width: 28px;
-                height: 3px;
-                background: #3ecf4a;
-                border-radius: 2px;
-              "
-            ></span>
-            <span
-              style="
-                display: block;
-                width: 28px;
-                height: 3px;
-                background: #3ecf4a;
-                border-radius: 2px;
-              "
-            ></span>
-            <span
-              style="
-                display: block;
-                width: 28px;
-                height: 3px;
-                background: #3ecf4a;
-                border-radius: 2px;
-              "
-            ></span>
-          </button>
-          <nav
-            id="dropdown-menu"
-            style="
-              display: none;
-              position: absolute;
-              right: 0;
-              top: 110%;
-              background: #2d323c;
-              border-radius: 10px;
-              box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
-              min-width: 180px;
-              z-index: 100;
-              flex-direction: column;
-            "
-          >
-            <a
-              href="../../index.html"
-              style="display: block; padding: 1em 1.2em; color: #3ecf4a"
-              >Home</a
-            >
-            <a
-              href="../index.html"
-              style="display: block; padding: 1em 1.2em; color: #3ecf4a"
-              >Topics</a
-            >
-            <a
-              href="../../contact/index.html"
-              style="display: block; padding: 1em 1.2em; color: #3ecf4a"
-              >Contact</a
-            >
-          </nav>
-        </div>
+  <header>
+    <div class="main-container" style="display:flex;justify-content:space-between;align-items:center;">
+      <h1>Felípe Blog</h1>
+      <div class="hamburger-menu" style="position:relative;">
+        <button id="hamburger-btn" aria-label="Open menu" style="background:none;border:none;cursor:pointer;padding:0.5em;display:flex;flex-direction:column;gap:5px;justify-content:center;align-items:center;">
+          <span style="display:block;width:28px;height:3px;background:#3ecf4a;border-radius:2px;"></span>
+          <span style="display:block;width:28px;height:3px;background:#3ecf4a;border-radius:2px;"></span>
+          <span style="display:block;width:28px;height:3px;background:#3ecf4a;border-radius:2px;"></span>
+          <span style="display:block;width:28px;height:3px;background:#3ecf4a;border-radius:2px;"></span>
+        </button>
+        <nav id="dropdown-menu" style="display:none;position:absolute;right:0;top:110%;background:#2d323c;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.12);min-width:180px;z-index:100;flex-direction:column;">
+          <a href="../../index.html" style="display:block;padding:1em 1.2em;color:#3ecf4a;">Home</a>
+          <a href="../../topics/index.html" style="display:block;padding:1em 1.2em;color:#3ecf4a;">Topics</a>
+          <a href="../../contact/index.html" style="display:block;padding:1em 1.2em;color:#3ecf4a;">Contact</a>
+          <a href="../../Subscription.html" style="display:block;padding:1em 1.2em;color:#3ecf4a;">Subscribe</a>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
     <main class="main-container">
       <div class="card" style="max-width: 700px; margin: 0 auto">
         <span
