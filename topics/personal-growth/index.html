@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Growth & Productivity - Felípe Blog</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header>
+    <div class="main-container" style="display:flex;justify-content:space-between;align-items:center;">
+      <h1>Felípe Blog</h1>
+      <div class="hamburger-menu" style="position:relative;">
+        <button id="hamburger-btn" aria-label="Open menu" style="background:none;border:none;cursor:pointer;padding:0.5em;display:flex;flex-direction:column;gap:5px;justify-content:center;align-items:center;">
+          <span style="display:block;width:28px;height:3px;background:#3ecf4a;border-radius:2px;"></span>
+          <span style="display:block;width:28px;height:3px;background:#3ecf4a;border-radius:2px;"></span>
+          <span style="display:block;width:28px;height:3px;background:#3ecf4a;border-radius:2px;"></span>
+        </button>
+        <nav id="dropdown-menu" style="display:none;position:absolute;right:0;top:110%;background:#2d323c;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.12);min-width:180px;z-index:100;flex-direction:column;">
+          <a href="../../index.html" style="display:block;padding:1em 1.2em;color:#3ecf4a;">Home</a>
+          <a href="../index.html" style="display:block;padding:1em 1.2em;color:#3ecf4a;">Topics</a>
+          <a href="../../contact/index.html" style="display:block;padding:1em 1.2em;color:#3ecf4a;">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main-container">
+    <h2>Personal Growth & Productivity</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="../../assets/growth1.jpg" alt="Morning Routines" style="width:100%;border-radius:8px;">
+        <h3>5 Morning Routines for a Productive Day</h3>
+        <div class="author"><img src="../../assets/author1.jpg" alt="Author"><div class="author-info">By Alex Carter</div></div>
+        <p>Discover simple morning habits that can boost your energy and focus all day long.</p>
+        <a href="article1.html" class="button">Read more</a>
+      </div>
+      <div class="card">
+        <img src="../../assets/growth2.jpg" alt="Goal Setting" style="width:100%;border-radius:8px;">
+        <h3>How to Set Goals You'll Actually Achieve</h3>
+        <div class="author"><img src="../../assets/author2.jpg" alt="Author"><div class="author-info">By Jamie Lee</div></div>
+        <p>Learn actionable strategies to set, track, and accomplish your personal goals.</p>
+        <a href="article2.html" class="button">Read more</a>
+      </div>
+      <div class="card">
+        <img src="../../assets/growth3.jpg" alt="Mindfulness" style="width:100%;border-radius:8px;">
+        <h3>Mindfulness for Busy People</h3>
+        <div class="author"><img src="../../assets/author3.jpg" alt="Author"><div class="author-info">By Morgan Smith</div></div>
+        <p>Quick mindfulness techniques to reduce stress and stay present, even on hectic days.</p>
+        <a href="article3.html" class="button">Read more</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    Felípe Blog &copy; 2025.
+  </footer>
+  <script src="../../script.js"></script>
+  <script>
+    // Dropdown logic
+    document.querySelectorAll('.dropdown').forEach(function(drop) {
+      const btn = drop.querySelector('button');
+      const content = drop.querySelector('.dropdown-content');
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+      document.addEventListener('click', function(e) {
+        if (!drop.contains(e.target)) content.style.display = 'none';
+      });
+    });
+  </script>
+</body>
+</html> 

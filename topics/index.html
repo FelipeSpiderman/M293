@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topics - Felípe Blog</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="main-container" style="display:flex;justify-content:space-between;align-items:center;">
+      <h1>Felípe Blog</h1>
+      <div class="hamburger-menu" style="position:relative;">
+        <button id="hamburger-btn" aria-label="Open menu" style="background:none;border:none;cursor:pointer;padding:0.5em;display:flex;flex-direction:column;gap:5px;justify-content:center;align-items:center;">
+          <span style="display:block;width:28px;height:3px;background:#3ecf4a;border-radius:2px;"></span>
+          <span style="display:block;width:28px;height:3px;background:#3ecf4a;border-radius:2px;"></span>
+          <span style="display:block;width:28px;height:3px;background:#3ecf4a;border-radius:2px;"></span>
+        </button>
+        <nav id="dropdown-menu" style="display:none;position:absolute;right:0;top:110%;background:#2d323c;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.12);min-width:180px;z-index:100;flex-direction:column;">
+          <a href="../index.html" style="display:block;padding:1em 1.2em;color:#3ecf4a;">Home</a>
+          <a href="index.html" style="display:block;padding:1em 1.2em;color:#3ecf4a;">Topics</a>
+          <a href="../contact/index.html" style="display:block;padding:1em 1.2em;color:#3ecf4a;">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main-container">
+    <section style="margin-bottom:2rem;">
+      <h2>Explore Topics</h2>
+      <div style="margin-bottom:1.5rem;">
+        <label for="topic-filter" style="font-weight:600;margin-right:0.7em;">Filter by topic:</label>
+        <select id="topic-filter" name="topic-filter">
+          <option value="all">All Topics</option>
+          <option value="personal-growth">Personal Growth & Productivity</option>
+          <option value="summer">Things to Do in Summer</option>
+          <option value="hobbies">Hobbies to Try</option>
+        </select>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Personal Growth & Productivity</h3>
+          <p>Tips, routines, and strategies to help you grow, stay motivated, and achieve your goals.</p>
+          <a href="personal-growth/index.html" class="button">View Articles</a>
+        </div>
+        <div class="card">
+          <h3>Things to Do in Summer</h3>
+          <p>Fun activities, adventures, and ideas to make your summer memorable and exciting.</p>
+          <a href="summer/index.html" class="button">View Articles</a>
+        </div>
+        <div class="card">
+          <h3>Hobbies to Try</h3>
+          <p>Discover new hobbies, creative outlets, and skills to enrich your free time.</p>
+          <a href="hobbies/index.html" class="button">View Articles</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    Felípe Blog &copy; 2025.
+  </footer>
+  <script src="../script.js"></script>
+  <script>
+    // Dropdown logic
+    document.querySelectorAll('.dropdown').forEach(function(drop) {
+      const btn = drop.querySelector('button');
+      const content = drop.querySelector('.dropdown-content');
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+      document.addEventListener('click', function(e) {
+        if (!drop.contains(e.target)) content.style.display = 'none';
+      });
+    });
+    // Topic filtering
+    const filter = document.getElementById('topic-filter');
+    const cards = document.querySelectorAll('.grid .card');
+    filter.addEventListener('change', function() {
+      const val = filter.value;
+      cards.forEach(card => {
+        if (val === 'all') {
+          card.style.display = '';
+        } else if (val === 'personal-growth' && card.textContent.includes('Personal Growth')) {
+          card.style.display = '';
+        } else if (val === 'summer' && card.textContent.includes('Summer')) {
+          card.style.display = '';
+        } else if (val === 'hobbies' && card.textContent.includes('Hobbies')) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html> 
